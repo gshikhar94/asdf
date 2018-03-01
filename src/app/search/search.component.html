@@ -1,0 +1,20 @@
+<div class="container">
+  Search:
+  <input type="text" #search placeholder="Search" (keyup.enter)="searchValue($event)">
+
+  <div *ngFor="let intent of intents">
+    <div (click)="inititateComp(intent)"><h4>{{intent}}</h4>
+    </div>
+    <ng-template appHelper></ng-template>
+    <!-- <p>
+    {{intent?.Plot}}
+  </p> -->
+  </div>
+
+  <div *ngIf="intents?.length < 1">
+    <hr>
+    <p>
+      No results found :(
+    </p>
+  </div>
+</div>

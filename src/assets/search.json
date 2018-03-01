@@ -1,0 +1,16 @@
+[
+    {
+        "intent": "policy details",
+        "data": {
+            "policy number": "1232343",
+            "submission number": "234534"
+        }
+    },
+    {
+        "intent": "recent activity",
+        "data": {
+            "policy number": "123",
+            "submission number": "234"
+        }
+    }
+]
