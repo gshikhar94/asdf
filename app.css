@@ -1,0 +1,62 @@
+.grid-cell {
+  margin: 5px;
+  cursor: pointer;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  background-color: #3F51B5;
+  color: #FFFFFF;
+  border-radius: 3px;
+  font-size: 36px;
+}
+
+.matched {
+  background-color: purple;
+}
+
+.grid-col-separator {
+  height: 50px;
+}
+
+.buttonGroup {
+  margin: 20px;
+  text-align: center;
+}
+
+.resetBtn {
+  margin-left: 20px;
+}
+
+.stats {
+  text-align: center;
+  /* background-color: gray; */
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+}
+
+.clicks {
+  float: left;
+}
+
+.timer {
+  float: right;
+}
+
+.mat-icon {
+  font-size: 28px;
+  line-height: 50px;
+}
+
+.game {
+  text-align: center;
+}
+
+.footer {
+  position: fixed;
+  bottom: 30px;
+  left: 50;
+  margin: 0 auto;
+  margin-left: 22vw;
+}

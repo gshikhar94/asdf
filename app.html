@@ -1,0 +1,29 @@
+<div class="container">
+	<div class="buttonGroup">
+		<button class="startBtn" mat-raised-button color="primary" type="reset" (click)="start()">Start</button>
+		<button class="resetBtn" mat-raised-button color="warn" type="reset" (click)="reset()">Restart</button>
+	</div>
+	<br>
+	<div *ngIf="showGame" class="game animated zoomIn">
+		<div class="stats">
+			<span class="clicks">
+        <mat-icon class="mat-icon">touch_app</mat-icon>
+        {{ clickCounter }}
+      </span>
+			<span class="timer">
+        {{ timer }}
+        <mat-icon class="mat-icon">access_time</mat-icon>&nbsp;
+      </span>
+		</div>
+		<br>
+		<div *ngFor="let i of [0,1,2]">
+			<span class="grid-cell" *ngFor="let j of [0,1,2]" id="{{ i + '-' + j }}" (click)="seletedGrid(i,j)">
+    {{ randomDummyArray[i][j] }}
+  </span>
+			<div class="grid-col-separator"></div>
+		</div>
+	</div>
+	<div class="footer">
+		Developed by Shikhar Gupta &copy; 2018
+	</div>
+</div>
